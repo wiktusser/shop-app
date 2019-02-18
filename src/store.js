@@ -15,8 +15,8 @@ const reducer = {
 
 const middleware = [...getDefaultMiddleware(), logger]
 
-const preloadedState = { //remove after setting up correct reducers/actions
-  exampleItems: [
+const preloadedState = {
+  displayItems: [
     {
       text: 'Test item 1',
       showItem: true

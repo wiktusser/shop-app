@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types'
 import '../index.css';
 
-import App from './App';
+import AppHeader from './AppHeader';
+import Home from './Home';
 import Detail from './Detail';
 
 //Redux
@@ -16,8 +17,9 @@ const Root = ({ store }) => (
     <Provider store={store}>
         <Router>
             <div>
+                <AppHeader />
 
-                <Route exact path="/" component={App} />
+                <Route exact path="/" component={Home} />
                 <Route path="/detail" component={Detail} />
             </div>
         </Router>
