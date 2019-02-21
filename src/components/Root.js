@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import '../index.css';
 
 import AppHeader from './AppHeader';
+import CategoriesList from './CategoriesList';
 import Home from './Home';
 import Detail from './Detail';
 
@@ -18,6 +19,7 @@ const Root = ({ store }) => (
         <Router>
             <div>
                 <AppHeader />
+                <CategoriesList />
 
                 <Route exact path="/" component={Home} />
                 <Route path="/detail" component={Detail} />
